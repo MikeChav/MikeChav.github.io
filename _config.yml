@@ -11,4 +11,5 @@ github_username:  MikeChav
 
 show_excerpts: true 
 
-theme: jekyll-theme-minimal
+theme: minima
+  # theme: jekyll-theme-minimal
