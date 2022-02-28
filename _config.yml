@@ -1,1 +1,14 @@
+title: Complexi-Tea Blog
+author: Michael C. Chavrimootoo
+email: michael.chavrimootoo@rochester.edu
+description: > # this means to ignore newlines until "baseurl:"
+  This blog will contain some thoughts and experiences on my journey as a Ph.D. student
+  in Theoretical Computer Science.
+  
+# social links
+twitter_username: MikeChav95
+github_username:  MikeChav
+
+show_excerpts: true 
+
 theme: jekyll-theme-minimal
