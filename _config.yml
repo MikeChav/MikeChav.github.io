@@ -4,7 +4,14 @@ email: michael.chavrimootoo@rochester.edu
 description: > # this means to ignore newlines until "baseurl:"
   This blog will contain some thoughts and experiences on my journey as a Ph.D. student
   in Theoretical Computer Science.
-  
+
+
+{% codeblock lang:html %}
+<script type="text/javascript"
+  src="http://www.complexi-tea.blog/assets/js/mathjax.min.js">
+</script>
+{% endcodeblock %}
+
 # social links
 twitter_username: MikeChav95
 github_username:  MikeChav
