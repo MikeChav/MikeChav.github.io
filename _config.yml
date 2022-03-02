@@ -6,12 +6,6 @@ description: > # this means to ignore newlines until "baseurl:"
   in Theoretical Computer Science.
 
 
-{% codeblock lang:html %}
-<script type="text/javascript"
-  src="http://www.complexi-tea.blog/assets/js/mathjax.min.js">
-</script>
-{% endcodeblock %}
-
 # social links
 twitter_username: MikeChav95
 github_username:  MikeChav
