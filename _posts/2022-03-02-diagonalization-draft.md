@@ -26,8 +26,8 @@ $$x \neq L_i$$, without affecting the outcome of prior stages.
 **Example:** Suppose we want to show that there is a language that is not
 [recursively enumerable](https://en.wikipedia.org/wiki/Recursively_enumerable_language) (RE).
 Since the class of RE sets ($$\Sigma_1^0$$) is countably infinite and they are each accepted by some
-Turing machine, we can assume that we have a list of those machines as $$M_1, M_2, M_3, \ldots$$.
-We can also assume that each string in over our alphabet is ordered as $$s_0, s_1, s_2, \ldots$$.
+Turing machine, we can assume that we have a list of those machines as $$M_1, M_2, M_3, \ldots$$
+We can also assume that each string in over our alphabet is ordered as $$s_0, s_1, s_2, \ldots$$
 Now let us devise our stages.
 
 *Stage 0*: Initialize $$A_0 = \emptyset$$.
@@ -43,7 +43,7 @@ machines. Then, $$s_j \in A \iff s_j \not\in L(M_j)$$. This is clearly contradic
 $$$A = L(M_j)$$, which means that $$A \not\in \Sigma_1^0$$.
 
 
-$$\begin{tabular}{|c|c|c|c|c|c|c|c|}
+$$\begin{array}{|c|c|c|c|c|c|c|c|}
 \hline
  & s_0 & s_1 & s_2 & s_3 & s_4 & s_5 & s_6 & s_7\\
 M_1 & \times & & & & & & \\
@@ -60,7 +60,7 @@ M_6 & & & & & & \times & \\
 \hline
 M_7 & & & & & & & \times
 \hline
-\end{tabular}$$
+\end{array}$$
 
 
 Pretty neat, huh! The natural question that follows is to ask how far can we push this technique?
@@ -88,4 +88,4 @@ So how much more flexible does this get? Injury methods allow you to affect prev
 stages, either finitely often, or infinitely often. These types of arguments are even more
 complicated to handle, but can prove additional results. Here are some examples from computability
 and complexity theory:
-**Need to list some
+**Need to list some**
