@@ -1,5 +1,6 @@
 ---
 title: (DRAFT) A multitool
+date: 2022-03-02
 ---
 
 {% include scripts.html %}
@@ -29,10 +30,10 @@ Now let us devise our stages.
 *Stage* $$i>0$$: If $$M_i$$ rejects $$s_i$$, set $$A_i = A_{i-1} \cup \{s_i\}$$, otherwise set $$A_i = A_{i-1}$$.
 
 If you set $$A = \bigcup_{i \in \mathbb{N}} A_i$$ and you end up with
- $$A = \{ i \mid M_i \text{ does not accept the string} s_i\}$$.
-Can this language be recursively enumerable? Well, let's assume that there is a machine that accepts $$A$$. Without loss
-of generality, let that machine be $$M_j$$ in the list of machines. Then, $$s_j \in A \iff s_j \not\in L(M_j)$$. This is
-clearly a contradiction, which means that $$A$$ is not recursively enumerable!
+ $$A = \{ i \mid M_i \text{ does not accept the string } s_i\}$$.
+Can this language be recursively enumerable? Well, let's assume it is and that there is a machine that accepts $$A$$, i.e., $$A = L(M_j)$$. 
+Without loss of generality, let that machine be $$M_j$$ in the list of machines. Then, $$s_j \in A \iff s_j \not\in L(M_j)$$.
+This is clearly contradicts the fact that $$$A = L(M_j)$$, which means that $$A$$ is not recursively enumerable!
 
 Pretty neat, huh. The natural question that follows is to ask how far can we push this technique?
 
