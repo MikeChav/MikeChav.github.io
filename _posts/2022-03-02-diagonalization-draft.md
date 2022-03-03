@@ -27,7 +27,7 @@ $$x \neq L_i$$, without affecting the outcome of prior stages.
 [recursively enumerable](https://en.wikipedia.org/wiki/Recursively_enumerable_language) (RE).
 Since the class of RE sets ($$\Sigma_1^0$$) is countably infinite and they are each accepted by some
 Turing machine, we can assume that we have a list of those machines as $$M_1, M_2, M_3, \ldots$$
-We can also assume that each string in over our alphabet is ordered as $$s_0, s_1, s_2, \ldots$$
+We can also assume that each string in over our alphabet is ordered as $$s_1, s_2, s_3, \ldots$$
 Now let us devise our stages.
 
 *Stage 0*: Initialize $$A_0 = \emptyset$$.
@@ -45,7 +45,8 @@ $$$A = L(M_j)$$, which means that $$A \not\in \Sigma_1^0$$.
 
 $$\begin{array}{|c|c|c|c|c|c|c|c|}
 \hline
- & s_0 & s_1 & s_2 & s_3 & s_4 & s_5 & s_6 & s_7\\
+ & s_1 & s_2 & s_3 & s_4 & s_5 & s_6 & s_7 \\
+\hline
 M_1 & \times & & & & & & \\
 \hline
 M_2 & & \times & & & & & \\
@@ -58,7 +59,7 @@ M_5 & & & & & \times & & \\
 \hline
 M_6 & & & & & & \times & \\
 \hline
-M_7 & & & & & & & \times
+M_7 & & & & & & & \times\\
 \hline
 \end{array}$$
 
@@ -67,7 +68,7 @@ Pretty neat, huh! The natural question that follows is to ask how far can we pus
 
 Among computability and complexity theory, there are many theorems that rely on diagonalization.
 Just a few are:
-1. The Halting Problem is undecidable.
+1. The Halting Problem is not recursive (Turing).
 2. Every RE set has an infinite recursive subset (who?).
 3. There is an infinite set that has no RE subset (and no coRE subset) (who?).
 4. The [Time Hierarchy Theorem](https://en.wikipedia.org/wiki/Time_hierarchy_theorem)
