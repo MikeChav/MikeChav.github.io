@@ -37,13 +37,13 @@ $$A_i = A_{i-1}$$. (This clearly does not affect what could have happened at sta
 
 If you set $$A = \bigcup_{i \in \mathbb{N}} A_i$$ and you end up with
  $$A = \{ i \mid M_i \text{ does not accept the string } s_i\}$$.
-Is $$A \in \Sigma_1^0$? Well, let's assume it is and that there is a machine that accepts
+Is $$A \in \Sigma_1^0$$? Well, let's assume it is and that there is a machine that accepts
 $$A$$, i.e., $$A = L(M_j)$$. Without loss of generality, let that machine be $$M_j$$ in the list of
 machines. Then, $$s_j \in A \iff s_j \not\in L(M_j)$$. This is clearly contradicts the fact that
 $$$A = L(M_j)$$, which means that $$A \not\in \Sigma_1^0$$.
 
 
-$$\begin{table}{|c|c|c|c|c|c|c|c|}
+$$\begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
  & s_0 & s_1 & s_2 & s_3 & s_4 & s_5 & s_6 & s_7\\
 M_1 & \times & & & & & & \\
@@ -60,7 +60,7 @@ M_6 & & & & & & \times & \\
 \hline
 M_7 & & & & & & & \times
 \hline
-\end{table}$$
+\end{tabular}$$
 
 
 Pretty neat, huh! The natural question that follows is to ask how far can we push this technique?
